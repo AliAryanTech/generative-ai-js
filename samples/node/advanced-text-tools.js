@@ -136,10 +136,7 @@ async function run() {
           {
             functionResponse: {
               name: "find_theaters",
-              response: {
-                name: "find_theaters",
-                content: functionResponse,
-              },
+              response: functionResponse,
             },
           },
         ],
