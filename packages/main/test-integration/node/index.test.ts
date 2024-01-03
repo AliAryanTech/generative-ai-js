@@ -166,7 +166,7 @@ describe("generateContent", function () {
     const response = result.response;
     expect(response.text()).to.not.be.empty;
   });
-  it("streaming, tools usage", async () => {
+  it("non-streaming, tools usage", async () => {
     const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || "");
     const model = genAI.getGenerativeModel({
       model: "gemini-pro",

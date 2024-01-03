@@ -46,7 +46,7 @@ export class ChatSession {
   constructor(
     apiKey: string,
     public model: string,
-    public apiVersion: string,
+    public apiVersion: string = "v1",
     public params?: StartChatParams,
   ) {
     this._apiKey = apiKey;
